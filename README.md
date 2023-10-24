@@ -1,1 +1,22 @@
+# <p align = "center"> CloudWalk - Quality Engineering Test </p>
 
+<p align="center" width="100px">
+   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbreezy-gallery.imgix.net%2F8791e510-106f-4605-b3cf-15ccb28e34a7%2FCloudWalk_Logo_Fundo_Branco-01.png&f=1&nofb=1&ipt=ade886e176fcf7be16fca802dcf36cf4ea5e364e2e9f3d3ef42e7b295195ad2d&ipo=images"/>
+</p>
+
+<p align = "center">
+   <img src="https://img.shields.io/badge/author-adnanbezerra-4dae71?style=flat-square" />
+</p>
+
+
+##  :clipboard: Description
+
+This is a test made for a quality engineering position at CloudWalk, a Brazilian fintech. It's my third attempt at working there, and, as wise men say, third time's a charm. Here we go.
+
+***
+
+## :computer:	 Technologies and Concepts
+
+- I don't know yet
+
+***
