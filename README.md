@@ -13,6 +13,8 @@
 
 This is a test made for a quality engineering position at CloudWalk, a Brazilian fintech. It's my third attempt at working there, and, as wise men say, third time's a charm. Here we go.
 
+Here's the [link to the original challenge](https://gist.github.com/cloudwalk-tests/af5ede5940b6b03902a532264e3d527e).
+
 ***
 
 ## :computer:	 Technologies and Concepts
