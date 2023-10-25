@@ -17,6 +17,35 @@ This is a test made for a quality engineering position at CloudWalk, a Brazilian
 
 ## :computer:	 Technologies and Concepts
 
-- I don't know yet
+- Read and parse .log files
+- Testing with Jest
 
 ***
+
+## 🏁 Running the Application
+
+This project was made using [NodeJS](https://nodejs.org/en), so, to run it, you must have the engine properly installed and running on your machine.
+
+To run the application, you must, first of all, clone this repository into your local machine, by running the following command:
+
+``` bash
+git clone git@github.com:adnanbezerra/cloudwalk-qualityengineer.git
+```
+
+Then, you will need to download its dependencies by running
+
+``` bash
+npm install
+```
+
+Once it's done, you can now run the application with the script
+
+``` bash
+npm run parser
+```
+
+Or you can run the tests with the command
+
+``` bash
+T.B.D.
+```
