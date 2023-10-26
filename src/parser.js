@@ -44,7 +44,6 @@ const interpretLog = (currentLine) => {
     const player1Regex = /\d+:\d+ Kill: \d+ \d+ \d+: (\S+(?: \S+)*?) killed/;
     const player2Regex = /killed\s(\S.*?)\sby/;
     
-    // Procuramos os nomes dos jogadores na string de log.
     const killer = line.join(" ").match(player1Regex)[1];
     const killed = line.join(" ").match(player2Regex)[1];
 
