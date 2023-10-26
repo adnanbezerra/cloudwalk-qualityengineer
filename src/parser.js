@@ -20,7 +20,13 @@ const interpretLog = (currentLine) => {
   const splittedLine = currentLine.split(" ");
   const line = clearWhiteSpaces(splittedLine);
 
-  if (line.includes("Kill:")) {
+   if (line.includes("ClientUserinfoChanged:")) {
+    const provisoryLine = currentLine.split("\\");
+
+    if(!currentGame.players.includes(provisoryLine[1])) {
+      currentGame.players.push(provisoryLine[1]);
+    }
+  } else if (line.includes("Kill:")) {
     currentGame.total_kills++;
   }
 }
