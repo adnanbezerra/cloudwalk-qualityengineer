@@ -19,7 +19,19 @@ const interpretLog = (currentLine) => {
   const splittedLine = currentLine.split(" ");
   const line = clearWhiteSpaces(splittedLine);
 
-   if (line.includes("ClientUserinfoChanged:")) {
+  if (line.includes("ShutdownGame:") || (line[0]) === "26") {
+    let gameName = `game_${gameNumber}`
+    parsedLog.push({
+      [gameName]: { ...currentGame }
+    })
+    gameNumber++;
+    currentGame = {
+      "total_kills": 0,
+      "players": [],
+      "kills": {}
+    };
+
+  } else if (line.includes("ClientUserinfoChanged:")) {
     const provisoryLine = currentLine.split("\\");
 
     if(!currentGame.players.includes(provisoryLine[1])) {
