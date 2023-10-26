@@ -1,11 +1,10 @@
 import fs from 'fs';
 const parsedLog = [];
-const initialGame = {
+let currentGame = {
   "total_kills": 0,
   "players": [],
   "kills": {}
-}
-let currentGame = { ...initialGame };
+};
 let gameNumber = 1;
 
 const clearWhiteSpaces = (line) => {
