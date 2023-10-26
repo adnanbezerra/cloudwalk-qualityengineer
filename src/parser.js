@@ -41,6 +41,18 @@ const interpretLog = (currentLine) => {
 
   } else if (line.includes("Kill:")) {
     currentGame.total_kills++;
+    const player1Regex = /\d+:\d+ Kill: \d+ \d+ \d+: (\S+(?: \S+)*?) killed/;
+    const player2Regex = /killed\s(\S.*?)\sby/;
+    
+    // Procuramos os nomes dos jogadores na string de log.
+    const killer = line.join(" ").match(player1Regex)[1];
+    const killed = line.join(" ").match(player2Regex)[1];
+
+    if (killer === "<world>") {
+      currentGame.kills[killed]--;
+    } else if (killer !== killed) {
+      currentGame.kills[killer]++;
+    }
   }
 }
 
@@ -48,11 +60,11 @@ const parseLog = () => {
   fs.readFile("./src/log/qgames.log", "utf8", (err, file) => {
     const splittedLines = file.split(/\r?\n|\r|\n/g);
 
-    for (let index = 11; index < 97; index++) {
+    for (let index = 0; index < splittedLines.length; index++) {
       interpretLog(splittedLines[index]);
     }
 
-    console.log(parsedLog[0]);
+    console.log(parsedLog);
   });
 };
 
