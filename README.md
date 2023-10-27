@@ -50,14 +50,8 @@ npm run parse-dc
 
 The scripts' names are quite semantic: gs stands for "gameScore" and dc stands for "deathCauses".
 
-Also, if you want to run the tests, you can run the test cases by running the command:
+Also, you can run the test cases by running the command:
 
 ``` bash
 npm run test
-```
-
-Or you can run the tests with the command
-
-``` bash
-T.B.D.
 ```
