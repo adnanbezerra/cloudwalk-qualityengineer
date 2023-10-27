@@ -40,10 +40,20 @@ Then, you will need to download its dependencies by running
 npm install
 ```
 
-Once it's done, you can now run the application with the script
+Once it's done, you can choose which script to run the application with. You can either parse the games' scores, or the death causes. To do so, there are two different scripts:
 
 ``` bash
-npm run parser
+npm run parse-gs 
+OR
+npm run parse-dc
+```
+
+The scripts' names are quite semantic: gs stands for "gameScore" and dc stands for "deathCauses".
+
+Also, if you want to run the tests, you can run the test cases by running the command:
+
+``` bash
+npm run test
 ```
 
 Or you can run the tests with the command
