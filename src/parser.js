@@ -1,11 +1,12 @@
 import fs from 'fs';
-import { getGameScoreParser } from './parsers/gameScoresParser.js';
+import GameScoresParser from './parsers/GameScoresParser.js';
 
 const parseLog = () => {
   fs.readFile("./src/log/qgames.log", "utf8", (err, file) => {
     const splittedLines = file.split(/\r?\n|\r|\n/g);
+    const parser = new GameScoresParser();
 
-    const parsedLog = getGameScoreParser(splittedLines);
+    const parsedLog = parser.getGameScore(splittedLines);
 
     console.log(parsedLog);
   });
