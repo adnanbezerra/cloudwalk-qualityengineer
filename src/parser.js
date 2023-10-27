@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { getGameScoreParser } from './parsers/gameScoresParser';
+import { getGameScoreParser } from './parsers/gameScoresParser.js';
 
 const parseLog = () => {
   fs.readFile("./src/log/qgames.log", "utf8", (err, file) => {
